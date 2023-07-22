@@ -115,9 +115,9 @@ while True:
 
     
     if isPowerMeter:
-        updateValue("sensor.house_power", False, power)
+        updateValue(f"sensor.{SENSOR_NAME}_power", False, power)
         time.sleep(1)
-        updateValue("sensor.house_powermeter_count", True, powermeter_count)
+        updateValue(f"sensor.{SENSOR_NAME}_powermeter_count", True, powermeter_count)
         time.sleep(1)
 
         print("end")
